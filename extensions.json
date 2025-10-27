@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "christian-kohler.path-intellisense",
+    "eg2.vscode-npm-script",
+    "humao.rest-client",
+    "mongodb.mongodb-vscode",
+    "yzhang.markdown-all-in-one",
+    "eamodio.gitlens"
+  ]
+}
