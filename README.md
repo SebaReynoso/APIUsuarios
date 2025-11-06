@@ -188,4 +188,93 @@ APIUsuarios/
 
 ---
 
+## 📄 README.md — APIUsuarios | SCRU Día 2
+
+```md
+# 📦 APIUsuarios — SCRU Día 2
+
+Proyecto backend en Node.js con Express, parte del roadmap SCRU.
+Este módulo inicia la gestión de usuarios y estructura base para futuras funcionalidades.
+
+---
+
+## 🚀 Scripts disponibles
+
+| Script       | Descripción                                      |
+|--------------|--------------------------------------------------|
+| `npm run dev`      | Inicia el servidor desde `backend/server.js` con nodemon |
+| `npm run dev:src`  | Inicia el servidor desde `backend/src/index.js` con nodemon |
+| `npm run lint`     | Ejecuta ESLint sobre el proyecto            |
+| `npm run format`   | Formatea archivos con Prettier              |
+
+---
+
+## 🧩 Estructura actual del proyecto
+
+```
+📁 APIUsuarios/
+├── 📁 backend/
+│   ├── 📁 src/
+│   │   └── index.js         # Servidor Express base
+│   └── server.js            # Versión alternativa o anterior
+├── 📁 frontend/              # Interfaz cliente (React, Vite, etc.)
+├── 📁 docs/                  # Documentación técnica y diagramas
+├── 📁 node_modules/          # Dependencias instaladas
+├── 📁 .vscode/               # Configuración de entorno VS Code
+├── .gitignore               # Exclusiones de Git
+├── .prettierrc              # Configuración de Prettier
+├── .prettierignore          # Exclusiones de Prettier
+├── eslint.config.mjs        # Configuración de ESLint
+├── docker-compose.yml       # Contenedores y servicios
+├── package.json             # Metadatos y scripts del proyecto
+├── package-lock.json        # Versionado de dependencias
+├── README.md                # Documentación principal
+└── setupProyecto.sh         # Script de inicialización
+
+---
+## 🗂️ Diagrama visual del proyecto
+
+![Estructura SCRU Día 2](./docs/estructura-dia2.png)
+---
+
+## 🌐 Endpoints disponibles
+
+- `GET /` → Respuesta de prueba: `"API Usuarios - Día 2 SCRU"`
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- Node.js
+- Express
+- Nodemon
+- ESLint + Prettier
+- Docker (estructura preparada)
+- Git + SSH (flujo autenticado)
+
+---
+# APIUsuarios - SCRU Día 2
+
+Servidor Express básico con estructura inicial para gestión de usuarios.
+
+## Scripts
+- `npm run dev`: Inicia el servidor en modo desarrollo con nodemon.
+
+## Endpoints
+- `GET /`: Respuesta de prueba.
+
+## Estructura
+- 📁 backend/ └── 📁 src/ └── index.js
+
+## 📌 Notas técnicas
+
+- El servidor principal para SCRU Día 2 se encuentra en `backend/src/index.js`.
+- Se recomienda usar `npm run dev:src` para esta etapa.
+- La autenticación con GitHub se realiza vía SSH (`git@github.com:SebaReynoso/APIUsuarios.git`).
+- La estructura está preparada para escalar con rutas, controladores y modelos.
+
+---
+## Endpoints nuevos
+
+- `GET /usuarios` → Devuelve listado de usuarios (mock)
 
