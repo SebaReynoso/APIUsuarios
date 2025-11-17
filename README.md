@@ -278,3 +278,13 @@ Servidor Express básico con estructura inicial para gestión de usuarios.
 
 - `GET /usuarios` → Devuelve listado de usuarios (mock)
 
+### 📮 POST /api/saludos
+
+Recibe un array de nombres y devuelve saludos personalizados.
+
+**Ejemplo de entrada:**
+
+```json
+{
+  "nombres": ["andrés", "lucía", "sebastián"]
+}
