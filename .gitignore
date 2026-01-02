@@ -1,0 +1,38 @@
+# --- Dependencias de Node.js ---
+# Ignora las carpetas de librerías en la raíz y en subcarpetas (backend/frontend)
+node_modules/
+**/node_modules/
+package-lock.json
+yarn.lock
+
+# --- Archivos de Configuración Sensible ---
+# Evita subir tus credenciales de base de datos o llaves de API
+.env
+.env.local
+.env.*.local
+**/.env
+
+# --- Editores y Herramientas ---
+# Configuración específica de Antigravity/VS Code y herramientas de formato
+.vscode/
+.idea/
+.prettierignore
+.prettierrc
+eslint.config.mjs
+
+# --- Archivos del Sistema ---
+# Basura generada por Windows o macOS
+Thumbs.db
+.DS_Store
+*.log
+desktop.ini
+
+# --- Docker y Temporales ---
+# Si Docker genera volúmenes o logs locales
+.docker/
+docker-compose.override.yml
+
+# --- Scripts de Automatización Local ---
+# Si estos scripts contienen rutas de tu PC que no sirven a otros
+# limpiaDuplicados.sh
+# setupProyecto.sh
